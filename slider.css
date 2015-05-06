@@ -1,0 +1,76 @@
+.axis-wrapper{
+	position: relative;
+	padding:20px 0;
+}
+.axis-animation{
+	position: relative;
+	width:10px;
+	height:10px;
+	background: -webkit-linear-gradient( #D0D0D0, #DFDFDF);
+	border: 1px solid #BBB;
+	margin:0 auto;
+	-webkit-box-shadow:0 0 2px #d5d5d5;	
+	-webkit-border-radius: 5px;
+  	border-radius:5px;
+}
+.axis-horizontal .axis-animation span{
+	top:-5px;
+}
+.axis-vertical .axis-animation span {
+	left:-5px;
+}
+.axis-animation span{
+	position: absolute;z-index: 10;
+	width:20px;height:20px;
+	display: inline-block;
+	background:#fff;
+	border: 1px solid #bbb;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, .3);
+	-webkit-border-radius: 14px;
+  	border-radius: 14px;
+  	cursor: pointer;
+  	-webkit-box-sizing:border-box;	
+}
+.axis-animation span:focus{
+	outline: none;
+}
+.axis-animation span.axis-handle-first,
+.axis-animation span.axis-handle-last{
+	background: #ddd;
+	border-color:#bbb;
+}
+.axis-animation span.selected, 
+.axis-animation span.axis-handle-first.selected, .axis-animation span.axis-handle-last.selected{
+	background: #00A5ED;
+	border-color: #00A5ED;
+}
+.axis-animation em{
+	position: absolute;
+	color:#333;
+	font-style:normal;
+	font-size: 12px;
+}
+.axis-horizontal .axis-handle-first em{
+	top:-20px;
+	left:0;
+}
+.axis-horizontal .axis-handle-last em{
+	top:-20px;	
+	right: 0;
+}
+.axis-horizontal .axis-handle em{
+	bottom:-20px;
+	left:0;	
+}
+.axis-vertical .axis-handle-first em{
+	left:-25px;
+	top:2px;
+}
+.axis-vertical .axis-handle-last em{
+	left:-40px;	
+	bottom: 0;
+}
+.axis-vertical .axis-handle em{
+	left:20px;
+	top:0;	
+}
